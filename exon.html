@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</div>
+<div class="slider">
+    <div class="slides">
+    <slide><img src="1.jpg" alt=""></slide>
+    <slide><img src="2.jpg" alt=""></slide>  
+    <slide><img src="3.jpg" alt=""></slide>  
+
+    </div>
+</div>
+
+.slide{
+    float: left;
+}
+.slides{
+    width: calc(500px * 3);
+    animation: glisse 10s infinite;
+}
+.slider{
+    width: 500px;
+    overflow: hidden;
+    margin: 150px auto;
+}
+@keyframes glisse{
+    0%{
+        transform: translateX(-500px);
+    }
+    33%{
+        transform: translateX(-1000px);
+    }
+    66%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(0);
+    }
+
+    .logo{
+        position: absolute;
+        margin: 10px;
+        width: 70px;
+        height: 70px;
+        display:block;
+        border: 1px solid coral;
+        border-radius: 100%;
+</body>
+</html>

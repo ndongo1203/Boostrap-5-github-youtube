@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vos cordonnées</title>
+</head>
+<body>
+<div id="partie1">
+    <fieldset>
+        <legend><b>Vos coordonn&eacute;es</b></legend>
+        <table border="0">
+            <p>
+               <label>Nom:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label></td>
+               <input type="text" name="nom"&nbsp;&nbsp; value="votre nom" />
+            </p>
+            <p>
+               <label>Pr&eacute;nom:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label></td>
+               <input type="text" name="prenom"  value="votre prenom" />
+            </p>
+        <p>
+                <label> <code>Date de naissance:&nbsp; </code></label>
+                <input type="date">
+        </p>
+        <p>      
+                <label>Mail:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+                <input type="email" name="mail" size="40" maxlength="256" value="votre mail" />
+        </p>
+        <p>
+            <label>Votre site:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+            <input type="url" name="site value="http://www." />
+        </p>
+        <p>
+            <label>Code:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+            <input type="password" name="code" />
+        </p>
+        <p>
+            <tr>
+                <td><label>Genre:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label></td>
+                <td><input type="radio" name="sexe" value="homme"/> <label>Homme </label> <br />
+                <input type="radio" name="sexe" value="femme" /><label>Femme</label> </td>
+            </tr>
+        </p>
+        <tr><td><label>Pays :</label></td><td><select name="pays">
+            <option value="null">Votre pays</option>
+            <option value="sen" > Sénégal</option>
+            <option value="Alg" >Algerie</option>
+            <option value="Mar" >Maroc</option>
+            <option value="Maur" >Mauritanie</option>
+            <option value="Fr"> France</option>
+            </select> </td></tr></table> 
+        </fieldset>>
+    </div>
+        <div id="partie2">
+        <fieldset>
+        <legend><b>Vos gouts</b></legend>
+        <input type="checkbox">Tarte aux fraises a la creme d'amandes<br/>
+        <input type="checkbox">Tarte aux prunes<br />
+        <input type="checkbox">Tarte rustique aux mirabelles de Lorraine, noisettes et miel<br />
+
+        <textarea name="gouts" cols="46" rows="6" onclick="this.value=''">
+            Decrivez vos gouts en detail 
+            </textarea> <br />
+            </fieldset>
+        </div>
+        <div id="partie3">
+        <fieldset> 
+        <legend><b>Envoyez nous votre photo</b></legend>
+        <input type="file" name="fichier"/>
+        <input type="hidden"name="texte" value="choisir" /> <br /><br />
+        <input type="reset" value="Effacer" />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="Envoyez" /><br/>
+        </fieldset>
+    </div>
+        </form>
+</body>
+</html>
